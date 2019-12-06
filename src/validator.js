@@ -1,6 +1,7 @@
 module.exports.validProof = proof => {
   //confere o hash que está sendo gerado por número, então é gerado hash por proof.
   let identificador = hash(proof);
+
   console.log("Gerando hash", identificador);
   return identificador == hash(PROOF);
 };
